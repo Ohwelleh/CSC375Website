@@ -5,14 +5,12 @@ import MenuBar from './MenuBar';
 
 const HeaderBar = styled.div`
    display: grid;
-   grid-template-columns: 10% 60% 26%;
-   grid-column-gap: 30px;
+   position: relative;
+   z-index: 1;
+   grid-template-columns: 10% 70% 17%;
+   grid-column-gap: 2%;
    background-color: green;
    box-shadow: 0 5px 15px 10px rgba(0, 0, 0, 0.2);
-`;
-
-const Test = styled.div`
-  padding-left: 20%;
 `;
 
 const MenuContainer = styled.div`
@@ -36,7 +34,7 @@ const Disclaimer = styled.p`
 `;
 
 const HeaderTitle = styled.h1`
-  font-size: 30px;
+  font-size: 40px;
   font-weight: 600;
   padding-bottom: 1.5%;
   padding-top: 1.5%;
