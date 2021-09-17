@@ -14,7 +14,7 @@ function App() {
       <Header />
       <div>
         <Switch>
-          <Route exact path="/" component={Home} />
+          <Route exact path="/CSC375Website" component={Home} />
           <Route exact path="/Members" component={Members} />
           <Route exact path="/Documents" component={Documents} />
           <Route exact path="/Contact" component={Contact} />

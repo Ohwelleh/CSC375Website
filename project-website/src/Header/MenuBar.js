@@ -19,7 +19,7 @@ function MenuBar() {
         <MenuButton as={IconButton} icon={<GiHamburgerMenu />} />
         <Portal>
           <MenuList>
-            <LinkButton to='/'>
+            <LinkButton to='/CSC375Website'>
               <MenuItem icon={<AiFillHome />}> Home </MenuItem>
             </LinkButton>
             {MenuItems.map((item, index) => {
