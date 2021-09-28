@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
-import samplePDF from './Testing.pdf';
+import samplePDF from './PDFs/Testing.pdf';
 import PDFDisplay from './PDFDisplay';
-import RFP from './PDFs/RFP.pdf'
+import RFP from './PDFs/RFP.pdf';
 
 import "./PDFStyling.css";
+
 
 const DocumentContainer = styled.div`
   display: grid;
@@ -93,6 +94,7 @@ const PDFDiv = styled.div`
 `;
 
 function Documents() {
+
 
   const [rendPDF, setPDF] = useState(() => ({pdfView: RFP, downloadName: "RFP.pdf"}))
 

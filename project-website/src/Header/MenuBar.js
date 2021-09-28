@@ -12,7 +12,6 @@ const MenuDiv = styled.div`
 `;
 
 function MenuBar() {
-  const props = MenuItems
   return(
     <MenuDiv>
       <Menu>
