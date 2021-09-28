@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
-import { PDFDownloadLink } from 'react-pdf';
 import samplePDF from './Testing.pdf';
 import PDFDisplay from './PDFDisplay';
 import RFP from './PDFs/RFP.pdf'
