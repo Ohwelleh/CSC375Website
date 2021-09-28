@@ -1,33 +1,35 @@
+import Mike from '../Pics/Micheal.jpg'
+
 const MemberItems = [
   {
     Name: 'Austin Bassett',
     Photo: 'Image Missing',
-    Paragraph: 'This text is just filler and must be replaced with a description of us.',
+    Paragraph: 'Software Administrator',
   },
   {
     Name: 'Steven Chan',
     Photo: 'Image Missing',
-    Paragraph: 'This text is just filler and must be replaced with a description of us.',
+    Paragraph: 'Systems Engineer',
   },
   {
     Name: 'Lagan Chohan',
     Photo: 'Image Missing',
-    Paragraph: 'This text is just filler and must be replaced with a description of us.',
+    Paragraph: 'Systems Administrator',
   },
   {
     Name: 'Michael Kuang',
-    Photo: 'Image Missing',
-    Paragraph: 'This text is just filler and must be replaced with a description of us.',
+    Photo: Mike,
+    Paragraph: 'UVIC Project Financial Administrator',
   },
   {
     Name: 'Sabrina Lee',
     Photo: 'Image Missing',
-    Paragraph: 'This text is just filler and must be replaced with a description of us.',
+    Paragraph: 'Student Academic Adviser',
   },
   {
     Name: 'Mehdi Raji',
     Photo: 'Image Missing',
-    Paragraph: 'This text is just adsasdasdasdasdsadasdasdasdasfsadasdasdsadsadasdsadsadsailler and must be replaced with a description of us.',
+    Paragraph: 'User Satisfaction and Quality Assurance',
   },
 ]
 

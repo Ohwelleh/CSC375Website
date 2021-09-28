@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
-import samplePDF from './PDFs/Testing.pdf';
+import comingPDF from './PDFs/Coming.pdf'
 import PDFDisplay from './PDFDisplay';
 import RFP from './PDFs/RFP.pdf';
 
@@ -71,7 +71,7 @@ const DocumentList = styled.div`
 
 const DocumentItem = styled.button`
   background: #d51900;
-  width: 100px;
+  width: 200px;
   height: 50px;
   border-radius: 5px;
 `;
@@ -105,8 +105,17 @@ function Documents() {
           <DocumentItem onClick={() => setPDF({pdfView: RFP, downloadName: "RFP.pdf"})} >
             <ButtonLabel>RFP</ButtonLabel>
           </DocumentItem>
-          <DocumentItem onClick={() => setPDF({pdfView: samplePDF, downloadName: "Testing.pdf"})} >
-            <ButtonLabel>Sample</ButtonLabel>
+          <DocumentItem onClick={() => setPDF({pdfView: comingPDF, downloadName: "Coming.pdf"})} >
+            <ButtonLabel>Charter</ButtonLabel>
+          </DocumentItem>
+          <DocumentItem onClick={() => setPDF({pdfView: comingPDF, downloadName: "Coming.pdf"})} >
+            <ButtonLabel>Meeting Notes</ButtonLabel>
+          </DocumentItem>
+          <DocumentItem onClick={() => setPDF({pdfView: comingPDF, downloadName: "Coming.pdf"})} >
+            <ButtonLabel>Client Meeting</ButtonLabel>
+          </DocumentItem>
+          <DocumentItem onClick={() => setPDF({pdfView: comingPDF, downloadName: "Coming.pdf"})} >
+            <ButtonLabel>Gantt Chart</ButtonLabel>
           </DocumentItem>
         </DocumentList>
       </DocumentListContainer>

@@ -1,20 +1,23 @@
 import React from 'react';
 import styled from 'styled-components';
+import { Center } from '@chakra-ui/react';
+import { Avatar } from '@chakra-ui/avatar';
 import { MemberItems } from './MemberData'
 
 const MemberContainer = styled.div`
   display: grid;
   justify-content: center;
-  grid-template-columns: max-content max-content max-content;
+  grid-template-columns: 25% 25% 25%;
   grid-template-rows: repeat(2, max-content);
   grid-column-gap: 10px;
   grid-row-gap: 40px;
   margin-top: 1%;
 `;
 
+
 const MemberInfoContainer = styled.div`
   display: grid;
-  grid-template-rows: repeat(3, max-content);
+  grid-template-rows: repeat(3, auto);
   background-color: #ffaa00;
   padding: 3%;
   padding-right: 5px;
@@ -27,18 +30,9 @@ const MemberName = styled.h1`
 `;
 
 const MemberInfo = styled.p`
-  word-wrap: break-word;
-  font-size: 15px;
-  width: 425px;
-  margin-right: 4px;
-`;
-
-const MemberImage = styled.div`
-  background-color: gray;
   justify-self: center;
-  border-radius: 30px;
-  height: 100px;
-  width: 100px;
+  font-size: 15px;
+  font-weight: 600;
 `;
 
 
@@ -48,7 +42,9 @@ function Members() {
       {MemberItems.map((item) => {
         return(
           <MemberInfoContainer>
-            <MemberImage>{item.Photo}</MemberImage>
+            <Center>
+              <Avatar size="2xl" src={item.Photo} />
+            </Center>
             <MemberName>{item.Name}</MemberName>
             <MemberInfo> {item.Paragraph}</MemberInfo>
           </MemberInfoContainer>
