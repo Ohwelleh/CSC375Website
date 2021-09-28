@@ -1,25 +1,125 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styled from 'styled-components';
+import { PDFDownloadLink } from 'react-pdf';
+import samplePDF from './Testing.pdf';
+import PDFDisplay from './PDFDisplay';
+import RFP from './PDFs/RFP.pdf'
 
-const ComingSoon = styled.div`
-  position: absolute;
-  background-color: blue;
+import "./PDFStyling.css";
+
+const DocumentContainer = styled.div`
+  display: grid;
+  grid-template-columns: 25% 75%;
+  grid-template-rows: repeat(3, auto);
   padding-bottom: 100%;
   width: 100%;
 `;
 
-const Text = styled.h1`
+const DocumentListContainer = styled.div`
+  margin-left: 10px;
+  margin-top: 9%;
+  justify-content: center;
+  align-content: center;
+  grid-column: 1;
+  background-color: #ffaa00;
+  border-radius: 30px;
+  height: 400px;
+`;
+
+const DownloadContainer = styled.div`
+  margin-left: 10px;
+  margin-top: 2%;
+  justify-content: center;
+  align-content: center;
+  grid-column: 1;
+  grid-row: 2;
+  background-color: #ffaa00;
+  border-radius: 30px;
+  height: 100px;
+`;
+
+const DownloadLabel = styled.a`
   color: white;
-  font-size: 100px;
+  font-weight: 600;
+  font-size: 30px;
+`;
+
+const DownloadButtonContainer = styled.div`
+  margin-top: 3%;
+  display: grid;
+  grid-template-rows: repeat(2, max-content);
+  grid-row-gap: 10px;
+  justify-content: center;
+  align-content: center;
+`;
+
+const DownloadButton = styled.button`
+  background: green;
+  width: 200px;
+  height: 75px;
+  border-radius: 5px;
+`;
+
+const DocumentList = styled.div`
+  margin-top: 10%;
+  display: grid;
+  grid-template-rows: repeat(2, max-content);
+  grid-row-gap: 10px;
+  justify-content: center;
+  align-content: center;
+`;
+
+const DocumentItem = styled.button`
+  background: #d51900;
+  width: 100px;
+  height: 50px;
+  border-radius: 5px;
+`;
+
+const ButtonLabel = styled.p`
+  color: white;
+  font-size: 25px;
+`;
+
+const PDFDiv = styled.div`
+  background-color: #ffaa00;
+  border-radius: 30px;
+  margin-left: 8%;
+  margin-top: 3%;
+  grid-column: 2;
+  grid-row: 1 / 4;
+  height: 700px;
+  width: 900px;
+  overflow: auto;
 `;
 
 function Documents() {
+
+  const [rendPDF, setPDF] = useState(() => ({pdfView: RFP, downloadName: "RFP.pdf"}))
+
   return(
-    <ComingSoon>
-      <Text>
-        Documents Coming Soon
-      </Text>
-    </ComingSoon>
+    <DocumentContainer>
+      <DocumentListContainer>
+        <DocumentList>
+          <DocumentItem onClick={() => setPDF({pdfView: RFP, downloadName: "RFP.pdf"})} >
+            <ButtonLabel>RFP</ButtonLabel>
+          </DocumentItem>
+          <DocumentItem onClick={() => setPDF({pdfView: samplePDF, downloadName: "Testing.pdf"})} >
+            <ButtonLabel>Sample</ButtonLabel>
+          </DocumentItem>
+        </DocumentList>
+      </DocumentListContainer>
+      <DownloadContainer>
+        <DownloadButtonContainer>
+          <DownloadButton>
+            <DownloadLabel download={rendPDF.downloadName} href={rendPDF.pdfView}>Download</DownloadLabel>
+          </DownloadButton>
+        </DownloadButtonContainer>
+      </DownloadContainer>
+      <PDFDiv>
+        <PDFDisplay pdf={rendPDF.pdfView} />
+      </PDFDiv>
+    </DocumentContainer>
   )
 }
 

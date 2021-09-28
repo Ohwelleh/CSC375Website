@@ -3,34 +3,42 @@ import styled from 'styled-components';
 import { MemberItems } from './MemberData'
 
 const MemberContainer = styled.div`
-  margin-top: 2%;
-  margin-left: 1%;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: max-content max-content max-content;
+  grid-template-rows: repeat(2, max-content);
+  grid-column-gap: 10px;
+  grid-row-gap: 40px;
+  margin-top: 1%;
 `;
 
 const MemberInfoContainer = styled.div`
   display: grid;
-  padding-bottom: 3%;
-  grid-template-columns: 50% 50%;
-  grid-template-rows: repeat(2, min-content);
+  grid-template-rows: repeat(3, max-content);
+  background-color: #ffaa00;
+  padding: 3%;
+  padding-right: 5px;
+  border-radius: 25px;
 `;
 
 const MemberName = styled.h1`
   font-size: 30px;
-  grid-row: 1;
+  justify-self: center;
 `;
 
 const MemberInfo = styled.p`
+  word-wrap: break-word;
   font-size: 15px;
-  grid-column: 1;
-  grid-row: 2;
+  width: 425px;
+  margin-right: 4px;
 `;
 
 const MemberImage = styled.div`
-  grid-column: 2;
-  grid-row: 2/3;
   background-color: gray;
-  height: 200px;
-  width: 200px;
+  justify-self: center;
+  border-radius: 30px;
+  height: 100px;
+  width: 100px;
 `;
 
 
@@ -40,9 +48,9 @@ function Members() {
       {MemberItems.map((item) => {
         return(
           <MemberInfoContainer>
-          <MemberName>{item.Name}</MemberName>
-          <MemberInfo> {item.Paragraph}</MemberInfo>
-          <MemberImage>{item.Photo}</MemberImage>
+            <MemberImage>{item.Photo}</MemberImage>
+            <MemberName>{item.Name}</MemberName>
+            <MemberInfo> {item.Paragraph}</MemberInfo>
           </MemberInfoContainer>
         );
       })}

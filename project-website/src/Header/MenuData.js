@@ -1,7 +1,7 @@
-import { AiFillHome } from 'react-icons/ai';
 import { BsPeopleFill } from 'react-icons/bs';
 import { IoDocumentsSharp } from 'react-icons/io5';
-import { MdEmail } from 'react-icons/md';
+import { FaHandshake } from 'react-icons/fa';
+import { AiFillProject } from 'react-icons/ai'; 
 
 const MenuItems = [
   {
@@ -9,13 +9,17 @@ const MenuItems = [
     Icon: <BsPeopleFill />,
   },
   {
+    Name: 'Project',
+    Icon: <AiFillProject />,
+  },
+  {
+    Name: 'Client',
+    Icon: <FaHandshake />,
+  },
+  {
     Name: 'Documents',
     Icon: <IoDocumentsSharp />,
   },
-  {
-    Name: 'Contact',
-    Icon: <MdEmail />,
-  }
 ]
 
 export { MenuItems }

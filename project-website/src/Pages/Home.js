@@ -1,41 +1,26 @@
 import React from 'react';
 import styled from 'styled-components';
-import { HomeItems } from './HomeData';
+import Card from './Card';
 
 const HomeContainer = styled.div`
-  margin-top: 2%;
-  margin-bottom: 3%;
   display: grid;
-  grid-row-gap: 4%;
+  grid-template-rows: auto;
   justify-content: center;
-  grid-template-rows: repeat(3, auto);
-`;
-const TitleContainer = styled.div`
-`;
-const SectionTitle = styled.h1`
-  font-size: 40px;
-  font-weight: 600;
-`;
-
-const SectionContent = styled.p`
-  margin-left: 10%;
-  font-size: 25px;
+  margin-top: 0.5%;
 `;
 
 
 function Home() {
+
+  const HomeItems = {
+
+      Name: 'Uvic Student Enrollment Team Analyst',
+      Paragraph: 'The University of Victoria’s(UVIC) current course enrollment process is dated, lackluster, and a complete nightmare. This is where the UVIC Student Enrollment Team comes in, we aim to tackle all the current issues with enrollment. Being an organization of UVIC students we are well versed in the nightmare of course enrollment, and dread it every term. While the enrollment process is needing more than a fresh coat of paint we are eager and ready for the challenge.',
+    }
+
   return (
     <HomeContainer>
-      {HomeItems.map((item) => {
-       return(
-        <TitleContainer>
-          <SectionTitle>
-            {item.Name}
-          </SectionTitle>
-        <SectionContent>{item.Paragraph}</SectionContent>
-        </TitleContainer>
-       ); 
-      })}
+      <Card Name={HomeItems.Name} Paragraph={HomeItems.Paragraph} />
     </HomeContainer>
   )
 

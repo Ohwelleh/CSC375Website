@@ -6,9 +6,9 @@ import { MenuItems } from './MenuData';
 import { AiFillHome } from 'react-icons/ai';
 
 const MenuDiv = styled.div`
-  grid-row: 1;
-  grid-column: 1;
   margin-left: 20px;
+  height: fit-content;
+  width: fit-content;
 `;
 
 function MenuBar() {
