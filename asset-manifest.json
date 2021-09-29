@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/CSC375Website/static/css/main.85f8942e.chunk.css",
-    "main.js": "/CSC375Website/static/js/main.45fe117f.chunk.js",
-    "main.js.map": "/CSC375Website/static/js/main.45fe117f.chunk.js.map",
+    "main.js": "/CSC375Website/static/js/main.a516228f.chunk.js",
+    "main.js.map": "/CSC375Website/static/js/main.a516228f.chunk.js.map",
     "runtime-main.js": "/CSC375Website/static/js/runtime-main.0ffbb6f0.js",
     "runtime-main.js.map": "/CSC375Website/static/js/runtime-main.0ffbb6f0.js.map",
     "static/js/2.159e83e8.chunk.js": "/CSC375Website/static/js/2.159e83e8.chunk.js",
@@ -15,6 +15,7 @@
     "static/css/main.85f8942e.chunk.css.map": "/CSC375Website/static/css/main.85f8942e.chunk.css.map",
     "static/js/2.159e83e8.chunk.js.LICENSE.txt": "/CSC375Website/static/js/2.159e83e8.chunk.js.LICENSE.txt",
     "static/media/Austin.0ad77a80.jpg": "/CSC375Website/static/media/Austin.0ad77a80.jpg",
+    "static/media/Client.0cef8af7.pdf": "/CSC375Website/static/media/Client.0cef8af7.pdf",
     "static/media/Coming.a6ff8014.pdf": "/CSC375Website/static/media/Coming.a6ff8014.pdf",
     "static/media/Lagan.ae389b3b.png": "/CSC375Website/static/media/Lagan.ae389b3b.png",
     "static/media/Micheal.71ab68fe.jpg": "/CSC375Website/static/media/Micheal.71ab68fe.jpg",
@@ -25,6 +26,6 @@
     "static/js/runtime-main.0ffbb6f0.js",
     "static/js/2.159e83e8.chunk.js",
     "static/css/main.85f8942e.chunk.css",
-    "static/js/main.45fe117f.chunk.js"
+    "static/js/main.a516228f.chunk.js"
   ]
 }
