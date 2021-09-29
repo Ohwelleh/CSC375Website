@@ -88,7 +88,7 @@ const PDFDiv = styled.div`
   margin-top: 3%;
   grid-column: 2;
   grid-row: 1 / 4;
-  height: 700px;
+  height: 18%;
   width: 900px;
   overflow: auto;
 `;
