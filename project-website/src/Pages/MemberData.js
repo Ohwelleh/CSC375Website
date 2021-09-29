@@ -1,11 +1,12 @@
 import Mike from '../Pics/Micheal.jpg';
 import Lagan from '../Pics/Lagan.png';
 import Sabrina from '../Pics/Sabrina.jpg';
+import Austin from '../Pics/Austin.jpg';
 
 const MemberItems = [
   {
     Name: 'Austin Bassett',
-    Photo: 'Image Missing',
+    Photo: Austin,
     Paragraph: 'Software Administrator',
   },
   {

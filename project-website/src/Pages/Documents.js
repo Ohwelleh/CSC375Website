@@ -16,7 +16,7 @@ const DocumentContainer = styled.div`
 `;
 
 const DocumentListContainer = styled.div`
-  margin-left: 10px;
+  margin-left: 10%;
   margin-top: 9%;
   justify-content: center;
   align-content: center;
@@ -27,7 +27,7 @@ const DocumentListContainer = styled.div`
 `;
 
 const DownloadContainer = styled.div`
-  margin-left: 10px;
+  margin-left: 10%;
   margin-top: 2%;
   justify-content: center;
   align-content: center;
