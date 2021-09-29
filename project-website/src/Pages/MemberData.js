@@ -1,4 +1,6 @@
-import Mike from '../Pics/Micheal.jpg'
+import Mike from '../Pics/Micheal.jpg';
+import Lagan from '../Pics/Lagan.png';
+import Sabrina from '../Pics/Sabrina.jpg';
 
 const MemberItems = [
   {
@@ -13,7 +15,7 @@ const MemberItems = [
   },
   {
     Name: 'Lagan Chohan',
-    Photo: 'Image Missing',
+    Photo: Lagan,
     Paragraph: 'Systems Administrator',
   },
   {
@@ -23,7 +25,7 @@ const MemberItems = [
   },
   {
     Name: 'Sabrina Lee',
-    Photo: 'Image Missing',
+    Photo: Sabrina,
     Paragraph: 'Student Academic Adviser',
   },
   {

@@ -11,7 +11,8 @@ const SectionTitle = styled.h1`
 `;
 
 const SectionContainer = styled.div`
-  width: 800px;
+  width: fit-content;
+  max-width: 1300px;
   margin: 1%;
 `;
 
