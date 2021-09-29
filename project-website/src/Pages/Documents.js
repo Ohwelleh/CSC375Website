@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
-import comingPDF from './PDFs/Coming.pdf'
 import PDFDisplay from './PDFDisplay';
+import comingPDF from './PDFs/Coming.pdf';
 import RFP from './PDFs/RFP.pdf';
+import Client from './PDFs/Client.pdf';
 
 import "./PDFStyling.css";
 
@@ -38,7 +39,18 @@ const DownloadContainer = styled.div`
   height: 100px;
 `;
 
-const DownloadLabel = styled.a`
+const DownloadLink = styled.a`
+  display: inline-block;
+  width: 200px;
+  height: 70px;
+  color: white;
+  font-weight: 600;
+  font-size: 30px;
+  text-align: center;
+  line-height: 70px;
+`;
+
+const DownloadLabel = styled.p`
   color: white;
   font-weight: 600;
   font-size: 30px;
@@ -88,7 +100,7 @@ const PDFDiv = styled.div`
   margin-top: 3%;
   grid-column: 2;
   grid-row: 1 / 4;
-  height: 18%;
+  height: 630px;
   width: 900px;
   overflow: auto;
 `;
@@ -111,7 +123,7 @@ function Documents() {
           <DocumentItem onClick={() => setPDF({pdfView: comingPDF, downloadName: "Coming.pdf"})} >
             <ButtonLabel>Meeting Notes</ButtonLabel>
           </DocumentItem>
-          <DocumentItem onClick={() => setPDF({pdfView: comingPDF, downloadName: "Coming.pdf"})} >
+          <DocumentItem onClick={() => setPDF({pdfView: Client, downloadName: "Client Meetings.pdf"})} >
             <ButtonLabel>Client Meeting</ButtonLabel>
           </DocumentItem>
           <DocumentItem onClick={() => setPDF({pdfView: comingPDF, downloadName: "Coming.pdf"})} >
@@ -122,7 +134,9 @@ function Documents() {
       <DownloadContainer>
         <DownloadButtonContainer>
           <DownloadButton>
-            <DownloadLabel download={rendPDF.downloadName} href={rendPDF.pdfView}>Download</DownloadLabel>
+            <DownloadLink download={rendPDF.downloadName} href={rendPDF.pdfView} >
+              Download 
+            </DownloadLink>
           </DownloadButton>
         </DownloadButtonContainer>
       </DownloadContainer>
