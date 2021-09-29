@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/CSC375Website/static/css/main.85f8942e.chunk.css",
-    "main.js": "/CSC375Website/static/js/main.6891b6d2.chunk.js",
-    "main.js.map": "/CSC375Website/static/js/main.6891b6d2.chunk.js.map",
+    "main.js": "/CSC375Website/static/js/main.42838d6c.chunk.js",
+    "main.js.map": "/CSC375Website/static/js/main.42838d6c.chunk.js.map",
     "runtime-main.js": "/CSC375Website/static/js/runtime-main.0ffbb6f0.js",
     "runtime-main.js.map": "/CSC375Website/static/js/runtime-main.0ffbb6f0.js.map",
     "static/js/2.159e83e8.chunk.js": "/CSC375Website/static/js/2.159e83e8.chunk.js",
@@ -24,6 +24,6 @@
     "static/js/runtime-main.0ffbb6f0.js",
     "static/js/2.159e83e8.chunk.js",
     "static/css/main.85f8942e.chunk.css",
-    "static/js/main.6891b6d2.chunk.js"
+    "static/js/main.42838d6c.chunk.js"
   ]
 }
