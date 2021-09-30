@@ -2,6 +2,8 @@ import Mike from '../Pics/Micheal.jpg';
 import Lagan from '../Pics/Lagan.png';
 import Sabrina from '../Pics/Sabrina.jpg';
 import Austin from '../Pics/Austin.jpg';
+import Steven from '../Pics/Steven.jpg';
+import Mehdi from '../Pics/Mehdi.jpg';
 
 const MemberItems = [
   {
@@ -11,7 +13,7 @@ const MemberItems = [
   },
   {
     Name: 'Steven Chan',
-    Photo: 'Image Missing',
+    Photo: Steven,
     Paragraph: 'Systems Engineer',
   },
   {
@@ -22,16 +24,16 @@ const MemberItems = [
   {
     Name: 'Michael Kuang',
     Photo: Mike,
-    Paragraph: 'UVIC Project Financial Administrator',
+    Paragraph: 'Project Analyst',
   },
   {
     Name: 'Sabrina Lee',
     Photo: Sabrina,
-    Paragraph: 'Student Academic Adviser',
+    Paragraph: 'Business Analyst',
   },
   {
     Name: 'Mehdi Raji',
-    Photo: 'Image Missing',
+    Photo: Mehdi,
     Paragraph: 'User Satisfaction and Quality Assurance',
   },
 ]

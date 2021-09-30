@@ -31,8 +31,8 @@ const MemberName = styled.h1`
 
 const MemberInfo = styled.p`
   justify-self: center;
-  font-size: 15px;
-  font-weight: 600;
+  font-size: 17px;
+  font-weight: 700;
 `;
 
 
