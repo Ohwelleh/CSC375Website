@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import PDFDisplay from './PDFDisplay';
 import comingPDF from './PDFs/Coming.pdf';
 import RFP from './PDFs/RFP.pdf';
+import Meeting from './PDFs/Meeting Notes.pdf';
 import Client from './PDFs/Client.pdf';
 
 import "./PDFStyling.css";
@@ -120,7 +121,7 @@ function Documents() {
           <DocumentItem onClick={() => setPDF({pdfView: comingPDF, downloadName: "Coming.pdf"})} >
             <ButtonLabel>Charter</ButtonLabel>
           </DocumentItem>
-          <DocumentItem onClick={() => setPDF({pdfView: comingPDF, downloadName: "Coming.pdf"})} >
+          <DocumentItem onClick={() => setPDF({pdfView: Meeting, downloadName: "Meeting Notes.pdf"})} >
             <ButtonLabel>Meeting Notes</ButtonLabel>
           </DocumentItem>
           <DocumentItem onClick={() => setPDF({pdfView: Client, downloadName: "Client Meetings.pdf"})} >
