@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/CSC375Website/static/css/main.85f8942e.chunk.css",
-    "main.js": "/CSC375Website/static/js/main.7651f785.chunk.js",
-    "main.js.map": "/CSC375Website/static/js/main.7651f785.chunk.js.map",
+    "main.js": "/CSC375Website/static/js/main.1103c8d3.chunk.js",
+    "main.js.map": "/CSC375Website/static/js/main.1103c8d3.chunk.js.map",
     "runtime-main.js": "/CSC375Website/static/js/runtime-main.0ffbb6f0.js",
     "runtime-main.js.map": "/CSC375Website/static/js/runtime-main.0ffbb6f0.js.map",
     "static/js/2.159e83e8.chunk.js": "/CSC375Website/static/js/2.159e83e8.chunk.js",
@@ -18,6 +18,7 @@
     "static/media/Client.0cef8af7.pdf": "/CSC375Website/static/media/Client.0cef8af7.pdf",
     "static/media/Coming.a6ff8014.pdf": "/CSC375Website/static/media/Coming.a6ff8014.pdf",
     "static/media/Lagan.ae389b3b.png": "/CSC375Website/static/media/Lagan.ae389b3b.png",
+    "static/media/Meeting Notes.478231a7.pdf": "/CSC375Website/static/media/Meeting Notes.478231a7.pdf",
     "static/media/Mehdi.5e9aff50.jpg": "/CSC375Website/static/media/Mehdi.5e9aff50.jpg",
     "static/media/Micheal.71ab68fe.jpg": "/CSC375Website/static/media/Micheal.71ab68fe.jpg",
     "static/media/RFP.0cfc8e0e.pdf": "/CSC375Website/static/media/RFP.0cfc8e0e.pdf",
@@ -28,6 +29,6 @@
     "static/js/runtime-main.0ffbb6f0.js",
     "static/js/2.159e83e8.chunk.js",
     "static/css/main.85f8942e.chunk.css",
-    "static/js/main.7651f785.chunk.js"
+    "static/js/main.1103c8d3.chunk.js"
   ]
 }
