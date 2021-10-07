@@ -39,7 +39,7 @@ const HeaderTitle = styled.h1`
   font-size: 40px;
   font-weight: 600;
   padding-top: 1.5%;
-  justify-self: end;
+  justify-self: center;
   color: white;
   font-style: normal;
 `;
@@ -51,7 +51,7 @@ function Header() {
           <MenuBar />
         </MenuContainer>
         <TitleContainer>
-        <HeaderTitle>Uvic Student Enrollment Team</HeaderTitle>
+        <HeaderTitle>The Devs</HeaderTitle>
         <ContactEmail>Contact Email: thedevs375@gmail.com</ContactEmail>
         <Disclaimer>
           Disclaimer: This website was developed for a course project.

@@ -19,6 +19,7 @@ const SectionContainer = styled.div`
 const SectionContent = styled.p`
   font-size: 25px;
   margin-left: 6px;
+  white-space: pre-line;
 `;
 
 const CardContainer = styled.div`

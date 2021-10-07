@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
 import PDFDisplay from './PDFDisplay';
-import comingPDF from './PDFs/Coming.pdf';
 import RFP from './PDFs/RFP.pdf';
 import Meeting from './PDFs/Meeting Notes.pdf';
 import Client from './PDFs/Client.pdf';
+import Charter from './PDFs/Charter.pdf';
+import Gantt from './PDFs/Gantt chart.pdf';
 
 import "./PDFStyling.css";
 
@@ -49,12 +50,6 @@ const DownloadLink = styled.a`
   font-size: 30px;
   text-align: center;
   line-height: 70px;
-`;
-
-const DownloadLabel = styled.p`
-  color: white;
-  font-weight: 600;
-  font-size: 30px;
 `;
 
 const DownloadButtonContainer = styled.div`
@@ -118,7 +113,7 @@ function Documents() {
           <DocumentItem onClick={() => setPDF({pdfView: RFP, downloadName: "RFP.pdf"})} >
             <ButtonLabel>RFP</ButtonLabel>
           </DocumentItem>
-          <DocumentItem onClick={() => setPDF({pdfView: comingPDF, downloadName: "Coming.pdf"})} >
+          <DocumentItem onClick={() => setPDF({pdfView: Charter, downloadName: "Charter.pdf"})} >
             <ButtonLabel>Charter</ButtonLabel>
           </DocumentItem>
           <DocumentItem onClick={() => setPDF({pdfView: Meeting, downloadName: "Meeting Notes.pdf"})} >
@@ -127,7 +122,7 @@ function Documents() {
           <DocumentItem onClick={() => setPDF({pdfView: Client, downloadName: "Client Meetings.pdf"})} >
             <ButtonLabel>Client Meeting</ButtonLabel>
           </DocumentItem>
-          <DocumentItem onClick={() => setPDF({pdfView: comingPDF, downloadName: "Coming.pdf"})} >
+          <DocumentItem onClick={() => setPDF({pdfView: Gantt, downloadName: "Gantt.pdf"})} >
             <ButtonLabel>Gantt Chart</ButtonLabel>
           </DocumentItem>
         </DocumentList>

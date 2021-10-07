@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import 'react-pdf/dist/esm/Page/AnnotationLayer.css';
 import { Document, Page, pdfjs } from 'react-pdf/dist/esm/entry.webpack';
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
 

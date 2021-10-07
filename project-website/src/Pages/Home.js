@@ -14,8 +14,8 @@ function Home() {
 
   const HomeItems = {
 
-      Name: 'Uvic Student Enrollment Team Analyst',
-      Paragraph: 'The University of Victoria’s(UVIC) current course enrollment process is dated, lackluster, and a complete nightmare. This is where the UVIC Student Enrollment Team comes in, we aim to tackle all the current issues with enrollment. Being an organization of UVIC students we are well versed in the nightmare of course enrollment, and dread it every term. While the enrollment process is needing more than a fresh coat of paint we are eager and ready for the challenge.',
+      Name: 'The Devs',
+      Paragraph: 'Each day new software is developed that aims to improve every person’s quality of life in one way or another. The Devs is one such organization with the goal of providing quality and secure software. Composed of young motivated individuals who are well versed in the struggles navigating the plethora of software solutions available, we are building an organization that can be trusted to deliver on our promises.',
     }
 
   return (
